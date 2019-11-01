@@ -1,4 +1,4 @@
-module StimSamabavam ;
+module StimMultAlu ;
 
 wire [31:0] DOut;
 reg [15:0] DIn ;
@@ -31,8 +31,8 @@ begin
 	addr = 1; DIn = 100; w = 1; #10;
 	addr = 2; w = 0;  r = 1; #10;
 
-	addr = 0; DIn = 65535; w = 1; #10;
-	addr = 1; DIn = 65535; w = 1; #10;
+	addr = 0; DIn = 1000; w = 1; #10;
+	addr = 1; DIn = 1000; w = 1; #10;
 	addr = 2; w = 0;  r = 1; #10;
 
 	op = 1 ;  // X%Y
@@ -44,8 +44,8 @@ begin
 	addr = 1; DIn = 100; w = 1; #10;
 	addr = 2; w = 0;  r = 1; #10;
 
-	addr = 0; DIn = 65535; w = 1; #10;
-	addr = 1; DIn = 65535; w = 1; #10;
+	addr = 0; DIn = 1000; w = 1; #10;
+	addr = 1; DIn = 1000; w = 1; #10;
 	addr = 2; w = 0;  r = 1; #10;
 
 	op = 2 ;	// X/Y
@@ -57,8 +57,8 @@ begin
 	addr = 1; DIn = 100; w = 1; #10;
 	addr = 2; w = 0;  r = 1; #10;
 
-	addr = 0; DIn = 65535; w = 1; #10;
-	addr = 1; DIn = 65535; w = 1; #10;
+	addr = 0; DIn = 1000; w = 1; #10;
+	addr = 1; DIn = 1000; w = 1; #10;
 	addr = 2; w = 0;  r = 1; #10;
 
 	op = 3 ;	// X%(X-Y)
@@ -70,8 +70,8 @@ begin
 	addr = 1; DIn = 100; w = 1; #10;
 	addr = 2; w = 0;  r = 1; #10;
 
-	addr = 0; DIn = 65535; w = 1; #10;
-	addr = 1; DIn = 65535; w = 1; #10;
+	addr = 0; DIn = 1000; w = 1; #10;
+	addr = 1; DIn = 250; w = 1; #10;
 	addr = 2; w = 0;  r = 1; #10;
 end
 endmodule
