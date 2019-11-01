@@ -50,4 +50,17 @@ case(op)
 		product = x ;
 	end
 	mem_ = product
+ 2'b10 :begin
+	
+ 2'b11 :begin
+	x = mem[0] ;
+	y = mem[0]-mem[1] ;
+	product = x ;
+	while(x>y)
+	begin
+		x = x - y ;
+		product = x ;
+	end
+	mem_ = product
+endcase
 endmodule
