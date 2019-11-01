@@ -5,41 +5,35 @@ input [15:0] DIn;
 input [1:0]addr;
 input r, w, clk,e;
 
-	
-//These Act As The RAM Here
-reg [15:0] mem[1:0];
-reg [31:0] mem_;
+reg [15:0] ram[1:0];
+reg [31:0] ram_;
 
-// This Part Is For Assigning Values To Memory Addresses
 always @(posedge clk) 
 begin
 	if(w) 
-		mem[addr] = DIn;
+		ram[addr] = DIn;
 	if(r)
 	begin
 		if(addr>1)
-			DOut = mem_;
+			DOut = ram_;
 		else
-			DOut = {{32-16{1'b0}}, mem[addr]};
+			DOut = {{32-16{1'b0}}, ram[addr]};
 	end
 end
 
-
-//This Is The Multiplication Part 
-// The Actual Multiplication Part
 reg[31:0] product;
 reg [15:0] multiplicand, multiplier;
 integer i;
-always @(mem[0] or mem[1])
+always @(ram[0] or ram[1])
 begin
-	assign multiplicand = mem[0];
-	assign multiplier = mem[1];
+	assign multiplicand = ram[0];
+	assign multiplier = ram[1];
 	product = 0;
 	for ( i = 0; i < 16; i= i+1)
 	begin
 		if ( multiplier[i])
 			product =  product + (multiplicand<< i);
 	end
-	mem_ = product;
+	ram_ = product;
 end
 endmodule
