@@ -5,9 +5,12 @@ input [15:0] DIn;
 input [1:0]addr;
 input r, w, clk,e;
 
+	
+//These Act As The RAM Here
 reg [15:0] mem[1:0];
 reg [31:0] mem_;
 
+// This Part Is For Assigning Values To Memory Addresses
 always @(posedge clk) 
 begin
 	if(w) 
@@ -21,6 +24,9 @@ begin
 	end
 end
 
+
+//This Is The Multiplication Part 
+// The Actual Multiplication Part
 reg[31:0] product;
 reg [15:0] multiplicand, multiplier;
 integer i;
