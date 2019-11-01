@@ -30,7 +30,7 @@ case(op)
 	always @(mem[0] or mem[1])
 	begin
 		assign multiplicand = mem[0]+mem[1];
-		assign multiplier = mem[0]+mem[1];
+		assign multiplier = mem[0]-mem[1];
 		product = 0;
 		for ( i = 0; i < 16; i= i+1)
 		begin
