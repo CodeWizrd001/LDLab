@@ -1,29 +1,36 @@
 module StimMultiplier ;
 
-wire [15:0] c ;
-reg clk ;
-reg [15:0] a,b ; 
+wire [31:0] DOut;
+reg [15:0] DIn ;
+reg [1:0] addr;
+reg r, w,clk,e;
 
-Multiplier M(a,b,c,clk) ; 
+
+RAM R(e,DIn,clk,addr,w,r,DOut);
 
 initial 
 begin 
-	clk = 0 ;
+	e = 1'b1 ;
+	clk = 1'b0 ;
 end
 
 always
-begin 
-	clk = ~clk ; #1 ;
+begin
+	clk = ~clk; #1 ;
 end
 
 initial 
 begin
-	a = 0 ; b = 0 ;
-	#10 ;
-	a = 100 ; #100 ;
-	b = 2 ; #100 ;
-	a = 5 ; #100 ;
-	b = 6 ; #100 ;
-end
+	addr = 0; DIn = 4; w = 1; #10;
+	addr = 1; DIn = 5; w = 1; #10;
+	addr = 2; w = 0;  r = 1; #10;
 
-endmodule	
+	addr = 0; DIn = 445; w = 1; #10;
+	addr = 1; DIn = 100; w = 1; #10;
+	addr = 2; w = 0;  r = 1; #10;
+
+	addr = 0; DIn = 65535; w = 1; #10;
+	addr = 1; DIn = 65535; w = 1; #10;
+	addr = 2; w = 0;  r = 1; #10;
+end
+endmodule
