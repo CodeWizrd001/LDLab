@@ -413,12 +413,14 @@ RAM8 R(1'b1,DIn,clk,addr,1'b1,1'b1,DOut) ;
 
 always @(a)
 begin
-	DIn = a ; addr = 3'b000 ; #3 a_ = DOut ; #3 ; 
+	a_ = a ;
+	DIn = a ; addr = 3'b000 ; #3 ; 
 end
 
 always @(b)  
 begin
-	DIn = b ; addr = 3'b001 ; #3 b_ = DOut ; #3 ;
+	b_ = b ;
+	DIn = b ; addr = 3'b001 ; #3 ;
 end
 
 always @(a_ or b_ )
@@ -432,12 +434,9 @@ end
 
 always @(temp)
 begin 
-	#7 ;
-	if(temp == tempans)
-	begin
-		DIn = temp[15:0] ; addr = 3'b010 ; #3 c = DOut ; 
+		c = temp ;
+		DIn = temp[15:0] ; addr = 3'b010 ; #3 ; 
 		DIn = temp[31:16] ; addr = 3'b011 ; #3 ;
-	end
 end
 
 endmodule
@@ -505,7 +504,7 @@ end
 
 always @(X or Y)
 begin 
-	sum = X+Y ; #5
+	sum = X+Y ;
 	diff = X-Y ; 
 end
 
