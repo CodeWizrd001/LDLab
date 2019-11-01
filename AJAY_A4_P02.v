@@ -25,7 +25,7 @@ begin
 	end
 end
 
-always @(op)
+always @(op,ram[0],ram[1])
 begin
 if(op==0) begin
 		multiplicand = ram[0]+ram[1];
