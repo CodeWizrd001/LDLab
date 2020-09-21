@@ -1,0 +1,383 @@
+module NotGate(a,b) ;
+
+output b ;
+input a ;
+
+nand(b,a,a) ;
+
+endmodule 
+
+module AndGate(a,b,c) ;
+
+output c ;
+input a,b ;
+wire x ;
+
+nand(x,a,b) ;
+nand(c,x,x) ; 
+
+endmodule 
+
+module OrGate(a,b,c) ;
+
+output c ;
+input a,b ;
+wire x,y ;
+
+nand(x,a,a) ;
+nand(y,b,b) ;
+nand(c,x,y) ;
+
+endmodule 
+
+module XorGate(a,b,c) ;
+
+output c ; 
+input a,b ;
+wire a_,b_,x,y ;
+
+NotGate Na(a,a_) ;
+NotGate Nb(b,b_) ;
+AndGate A1(a,b_,x) ;
+AndGate A2(a_,b,y) ;
+OrGate O(x,y,c) ;
+
+endmodule 
+
+module XnorGate(a,b,c) ;
+
+output c ;
+input a,b ;
+wire x ;
+
+XorGate X(a,b,x) ;
+NotGate N(x,c) ;
+
+endmodule  
+
+module Nand3(a,b,c,o) ;
+
+output o ;
+input a,b,c ;
+wire x,y ;
+
+AndGate A(a,b,x) ;
+AndGate B(x,c,y) ;
+NotGate C(y,o) ;
+
+endmodule 
+
+module DeCoder2(e,i,o) ;
+
+output [1:0] o ;
+input e,i ;
+wire i_ ;
+
+NotGate Ne(i,i_) ;
+AndGate O1(i_,e,o[0]) ;
+AndGate O2(i,e,o[1]) ;
+
+endmodule 
+
+module DeCoder4(e,i,o) ;
+
+output [3:0] o ;
+input [1:0] i ;
+input e ;
+wire [1:0] t ;
+
+DeCoder2 D1(e,i[1],t[1:0]) ;
+DeCoder2 D2(t[1],i[0],o[3:2]) ;
+DeCoder2 D3(t[0],i[0],o[1:0]) ;
+
+endmodule 
+
+module DeCoder8(e,i,o) ;
+
+output [7:0] o ;
+input [2:0] i ;
+input e ;
+wire [1:0] t ;
+
+DeCoder2 D1(e,i[2],t[1:0]);
+DeCoder4 D2(t[0],i[1:0],o[3:0]) ;
+DeCoder4 D3(t[1],i[1:0],o[7:4]) ;
+
+endmodule 
+
+module DLatch(d,c,q,q_) ;
+
+output q,q_ ;
+input d,c ;
+wire c_,s,r,x,y ;
+
+AndGate S(d,d,s) ;
+NotGate R(d,r) ;
+nand(x,c,s) ;
+nand(y,c,r) ;
+nand(q,q_,x) ;
+nand(q_,q,y) ;
+
+endmodule 
+
+module DLatchWR(d,c,q,q_,re) ;
+
+output q,q_,re ;
+input d,c ;
+wire c_,s,r,x,y,re_ ;
+
+AndGate S(d,d,s) ;
+NotGate R(d,r) ;
+
+nand(x,c,s) ;
+nand(y,c,r) ;
+Nand3 N1(q_,x,1'b1,q) ;
+Nand3 N2(q,y,re,q_) ;
+
+endmodule 
+
+module DFlipFlopRE(d,c,q,q_) ;
+
+output q,q_ ;
+input d,c ;
+wire c_,Q,Q_ ;
+
+NotGate C_(c,c_) ;
+
+DLatch D1(d,c_,Q,Q_) ;
+DLatch D2(Q,c,q,q_) ;
+
+endmodule 
+
+module DFlipFlopSReset(d,c,q,q_,re) ;
+
+output q,q_ ;
+input d,c,re ;
+wire re_,d_ ;
+
+NotGate Re(re,re_) ;
+AndGate A(d,re_,d_) ;
+DFlipFlopRE Df(d_,c,q,q_) ;
+
+endmodule 
+
+module DFlipFlopAResetLow(d,c,q,q_,re) ;
+
+output q,q_ ;
+input d,c,re ;
+wire Q,Q_,c_ ;
+
+nand(c_,c,c) ;
+
+DLatchWR D1(d,c_,Q,Q_,re) ;
+DLatchWR D2(Q,c,q,q_,re) ;
+
+endmodule 
+
+module DFlipFlopAResetHigh(d,c,q,q_,re) ;
+
+output q,q_ ;
+input d,c,re ;
+wire re_,Q,Q_ ;
+
+NotGate R(re,re_) ;
+NotGate N(c,c_) ;
+
+DLatchWR D1(d,c_,Q,Q_,re_) ;
+DLatchWR D2(Q,c,q,q_,re_) ;
+
+endmodule 
+
+module BinaryCell(DIn,clk,cs,w,r,DOut) ;
+
+output DOut ;
+input DIn,clk,cs,w,r ;
+wire s1,s2,d,q,q_ ;
+
+AndGate In(w,cs,s1) ;
+AndGate Out(r,cs,s2) ;
+Mux2x1 M1(q,DIn,s1,d) ;
+DFlipFlopRE D(d,clk,q,q_) ;
+Mux2x1 M2(1'bx,q,s2,DOut) ;
+
+endmodule
+
+module Reg16Bit(DIn,clk,cs,w,r,DOut) ;
+
+output [15:0] DOut ;
+input [15:0] DIn;
+input clk,cs,w,r ;
+
+BinaryCell B[15:0](DIn,clk,cs,w,r,DOut) ; 
+
+endmodule 
+
+module Mux2x1(a,b,s,c) ;  // 12
+
+output c ;
+input a,b,s ;
+wire x,y,z ;
+
+NotGate NG_1(s,z );
+AndGate AG_1(a,z,x) ;
+AndGate AG_2(b,s,y) ;
+OrGate OG_1(x,y,c) ;
+
+endmodule 
+
+module Mux4x1(i0,i1,i2,i3,s1,s0,o) ;// 15
+
+output o ;
+input i0,i1,i2,i3 ;
+input s1,s0;
+wire x,y ;
+
+Mux2x1 M_1(i0,i1,s1,x);
+Mux2x1 M_2(i2,i3,s1,y) ;
+Mux2x1 M_3(x,y,s0,o) ;
+
+endmodule
+
+module Mux4x1_16(i0,i1,i2,i3,s,o) ;
+
+output [15:0] o ;
+input [15:0] i0,i1,i2,i3 ;
+input [1:0] s ;
+
+Mux4x1 M[15:0](i0,i1,i2,i3,s[0],s[1],o) ;
+
+endmodule
+
+module Mux8x1(i1,i2,i3,i4,i5,i6,i7,i8,s0,s1,s2,o) ;		// 16
+
+output o ;
+input i1,i2,i3,i4,i5,i6,i7,i8 ;
+input s2,s1,s0 ;
+wire x,y ;
+
+Mux4x1 M1(i1,i2,i3,i4,s0,s1,x) ;
+Mux4x1 M2(i5,i6,i7,i8,s0,s1,y) ;
+Mux2x1 M3(x,y,s2,o) ;
+
+endmodule 
+
+module Mux8x1_16(i1,i2,i3,i4,i5,i6,i7,i8,s,o) ;
+
+output [15:0] o ;
+input [15:0] i1,i2,i3,i4,i5,i6,i7,i8 ;
+input [2:0] s ;
+
+Mux8x1 M[15:0](i1,i2,i3,i4,i5,i6,i7,i8,s[0],s[1],s[2],o) ;
+
+endmodule
+
+module RAM8(e,DIn,clk,addr,w,r,DOut) ;
+
+output [15:0] DOut ;
+input [15:0] DIn ;
+input clk,w,r,e ;
+input [2:0] addr ;
+wire [7:0] cs ;
+wire [15:0] o1,o2,o3,o4,o5,o6,o7,o8 ;
+
+DeCoder8 Addr(e,addr,cs) ;
+Reg16Bit r1(DIn,clk,cs[0],w,r,o1) ;
+Reg16Bit r2(DIn,clk,cs[1],w,r,o2) ;
+Reg16Bit r3(DIn,clk,cs[2],w,r,o3) ;
+Reg16Bit r4(DIn,clk,cs[3],w,r,o4) ;
+Reg16Bit r5(DIn,clk,cs[4],w,r,o5) ;
+Reg16Bit r6(DIn,clk,cs[5],w,r,o6) ;
+Reg16Bit r7(DIn,clk,cs[6],w,r,o7) ;
+Reg16Bit r8(DIn,clk,cs[7],w,r,o8) ;
+
+Mux8x1_16 M(o1,o2,o3,o4,o5,o6,o7,o8,addr,DOut) ;
+
+endmodule 
+
+module RAM64(e,DIn,clk,addr,w,r,DOut) ;
+
+output [15:0] DOut ;
+input [15:0] DIn ;
+input clk,w,r,e ;
+input [5:0] addr ;
+wire [7:0] rs ;
+wire [15:0] o1,o2,o3,o4,o5,o6,o7,o8 ;
+
+DeCoder8 RAddr(e,addr[5:3],rs) ;
+RAM8 R1(rs[0],DIn,clk,addr[2:0],w,r,o1) ;
+RAM8 R2(rs[1],DIn,clk,addr[2:0],w,r,o2) ;
+RAM8 R3(rs[2],DIn,clk,addr[2:0],w,r,o3) ;
+RAM8 R4(rs[3],DIn,clk,addr[2:0],w,r,o4) ;
+RAM8 R5(rs[4],DIn,clk,addr[2:0],w,r,o5) ;
+RAM8 R6(rs[5],DIn,clk,addr[2:0],w,r,o6) ;
+RAM8 R7(rs[6],DIn,clk,addr[2:0],w,r,o7) ;
+RAM8 R8(rs[7],DIn,clk,addr[2:0],w,r,o8) ;
+
+Mux8x1_16 M(o1,o2,o3,o4,o5,o6,o7,o8,addr[5:3],DOut) ;
+
+endmodule
+
+module RAM512(e,DIn,clk,addr,w,r,DOut) ;
+
+output [15:0] DOut ;
+input [15:0] DIn ;
+input clk,w,r,e ;
+input [8:0] addr ;
+wire [7:0] rs ;
+wire [15:0] o1,o2,o3,o4,o5,o6,o7,o8 ;
+
+DeCoder8 RAddr(e,addr[8:6],rs) ;
+RAM64 R1(rs[0],DIn,clk,addr[5:0],w,r,o1) ;
+RAM64 R2(rs[1],DIn,clk,addr[5:0],w,r,o2) ;
+RAM64 R3(rs[2],DIn,clk,addr[5:0],w,r,o3) ;
+RAM64 R4(rs[3],DIn,clk,addr[5:0],w,r,o4) ;
+RAM64 R5(rs[4],DIn,clk,addr[5:0],w,r,o5) ;
+RAM64 R6(rs[5],DIn,clk,addr[5:0],w,r,o6) ;
+RAM64 R7(rs[6],DIn,clk,addr[5:0],w,r,o7) ;
+RAM64 R8(rs[7],DIn,clk,addr[5:0],w,r,o8) ;
+
+Mux8x1_16 M(o1,o2,o3,o4,o5,o6,o7,o8,addr[8:6],DOut) ;
+
+endmodule
+
+module RAM4K(e,DIn,clk,addr,w,r,DOut) ;
+
+output [15:0] DOut ;
+input [15:0] DIn ;
+input clk,w,r,e ;
+input [11:0] addr ;
+wire [7:0] rs ;
+wire [15:0] o1,o2,o3,o4,o5,o6,o7,o8 ;
+
+DeCoder8 RAddr(e,addr[11:9],rs) ;
+RAM512 R1(rs[0],DIn,clk,addr[8:0],w,r,o1) ;
+RAM512 R2(rs[1],DIn,clk,addr[8:0],w,r,o2) ;
+RAM512 R3(rs[2],DIn,clk,addr[8:0],w,r,o3) ;
+RAM512 R4(rs[3],DIn,clk,addr[8:0],w,r,o4) ;
+RAM512 R5(rs[4],DIn,clk,addr[8:0],w,r,o5) ;
+RAM512 R6(rs[5],DIn,clk,addr[8:0],w,r,o6) ;
+RAM512 R7(rs[6],DIn,clk,addr[8:0],w,r,o7) ;
+RAM512 R8(rs[7],DIn,clk,addr[8:0],w,r,o8) ;
+
+Mux8x1_16 M(o1,o2,o3,o4,o5,o6,o7,o8,addr[11:9],DOut) ;
+
+endmodule
+
+module RAM16K(e,DIn,clk,addr,w,r,DOut) ;
+
+output [15:0] DOut ;
+input [15:0] DIn ;
+input clk,w,r,e ;
+input [13:0] addr ;
+wire [3:0] rs ;
+wire [15:0] o1,o2,o3,o4 ;
+
+DeCoder4 RAddr(e,addr[13:12],rs) ;
+RAM4K R1(rs[0],DIn,clk,addr[11:0],w,r,o1) ;
+RAM4K R2(rs[1],DIn,clk,addr[11:0],w,r,o2) ;
+RAM4K R3(rs[2],DIn,clk,addr[11:0],w,r,o3) ;
+RAM4K R4(rs[3],DIn,clk,addr[11:0],w,r,o4) ;
+
+Mux4x1_16 M(o1,o2,o3,o4,addr[13:12],DOut) ;
+
+endmodule
