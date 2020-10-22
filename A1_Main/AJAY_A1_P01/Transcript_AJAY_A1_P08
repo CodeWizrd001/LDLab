@@ -1,0 +1,13 @@
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A1_P08
+# Compile of AJAY_A1_P08.v was successful.
+# Compile of AJAY_A1_P08_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SimAnd16
+# vsim -gui work.SimAnd16 
+# Start time: 22:08:06 on Aug 22,2019
+# Loading work.SimAnd16
+# Loading work.AndGate16
+# Loading work.AndGate
+add wave -position insertpoint sim:/SimAnd16/*
+run -all

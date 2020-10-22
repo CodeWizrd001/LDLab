@@ -1,0 +1,22 @@
+D:/Files/ModelSim/AJAY_B180341CS_AIII/AJAY_A3_P01_b.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AIII/AJAY_A3_P01_b.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module NotGate
+-- Compiling module AndGate
+-- Compiling module OrGate
+-- Compiling module Mux2x1
+-- Compiling module DLatch
+-- Compiling module DFlipFlopRE
+-- Compiling module DFlipFlopRESReset
+
+Top level modules:
+	Mux2x1
+	DFlipFlopRESReset
+
+} {} {}} D:/Files/ModelSim/AJAY_B180341CS_AIII/AJAY_A3_P01_b_TB.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AIII/AJAY_A3_P01_b_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module StimDFlipFlopRESReset
+
+Top level modules:
+	StimDFlipFlopRESReset
+
+} {} {}}

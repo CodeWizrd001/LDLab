@@ -1,0 +1,34 @@
+# Reading D:/intelFPGA_pro/19.2/modelsim_ase/tcl/vsim/pref.tcl
+project open D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P08.mpf
+# Loading project AJAY_A2_P08
+# Compile of AJAY_A2_P08.v was successful.
+# Compile of AJAY_A2_P08_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of AJAY_A2_P08.v was successful.
+# Compile of AJAY_A2_P08_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+vsim -gui work.StimALU
+# vsim -gui work.StimALU 
+# Start time: 21:13:33 on Sep 11,2019
+# Loading work.StimALU
+# Loading work.ALU
+# Loading work.NotGate
+# Loading work.AndGate16w1
+# Loading work.XorGate16w1
+# Loading work.Add16Bit
+# Loading work.FullAdder
+# Loading work.XorGate
+# Loading work.AndGate
+# Loading work.OrGate
+# Loading work.XnorGate
+# Loading work.AndGate16
+# Loading work.Mux16b2x1
+# Loading work.Nor16In
+# Loading work.Mux2x1
+add wave -position insertpoint sim:/StimALU/*
+run -all
+quit -sim
+# End time: 21:14:57 on Sep 11,2019, Elapsed time: 0:01:24
+# Errors: 0, Warnings: 0

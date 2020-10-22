@@ -1,0 +1,19 @@
+D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P17_TB.v {1 {vlog -work work -stats=none D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P17_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module SimDMux1x4
+
+Top level modules:
+	SimDMux1x4
+
+} {} {}} D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P17.v {1 {vlog -work work -stats=none D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P17.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module NotGate
+-- Compiling module AndGate
+-- Compiling module OrGate
+-- Compiling module DMux1x2
+-- Compiling module DMux1x4
+
+Top level modules:
+	DMux1x4
+
+} {} {}}

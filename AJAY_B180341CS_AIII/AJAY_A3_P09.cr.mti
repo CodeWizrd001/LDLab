@@ -1,0 +1,27 @@
+D:/Files/ModelSim/AJAY_B180341CS_AIII/AJAY_A3_P09_TB.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AIII/AJAY_A3_P09_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module StimPC
+
+Top level modules:
+	StimPC
+
+} {} {}} D:/Files/ModelSim/AJAY_B180341CS_AIII/AJAY_A3_P09.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AIII/AJAY_A3_P09.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module NotGate
+-- Compiling module AndGate
+-- Compiling module OrGate
+-- Compiling module XorGate
+-- Compiling module DLatch
+-- Compiling module DFlipFlopRE
+-- Compiling module BinaryCell
+-- Compiling module Reg16Bit
+-- Compiling module Mux2x1
+-- Compiling module Mux2x1_16
+-- Compiling module HalfAdder
+-- Compiling module Inc16Bit
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}}

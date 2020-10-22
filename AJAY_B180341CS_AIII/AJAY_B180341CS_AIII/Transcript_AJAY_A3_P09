@@ -1,0 +1,36 @@
+# Reading D:/intelFPGA_pro/19.2/modelsim_ase/tcl/vsim/pref.tcl
+# Loading project AJAY_B180341CS_AIII
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A3_P09
+# Compile of AJAY_A3_P09.v was successful.
+# Compile of AJAY_A3_P09_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimPC
+# vsim -gui work.StimPC 
+# Start time: 19:28:51 on Oct 11,2019
+# Loading work.StimPC
+# Loading work.PC
+# Loading work.Mux2x1_16
+# Loading work.Inc16Bit
+# Loading work.HalfAdder
+# Loading work.AndGate
+# Loading work.XorGate
+# Loading work.NotGate
+# Loading work.OrGate
+# Loading work.Reg16Bit
+# Loading work.Mux2x1
+# Loading work.BinaryCell
+# Loading work.DFlipFlopRE
+# Loading work.DLatch
+add wave -position insertpoint sim:/StimPC/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ajay  Hostname: MSI  ProcessID: 12324
+#           Attempting to use alternate WLF file "./wlftyd5j7r".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftyd5j7r
+run
+run
+run
+quit -sim
+# End time: 19:29:12 on Oct 11,2019, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 2

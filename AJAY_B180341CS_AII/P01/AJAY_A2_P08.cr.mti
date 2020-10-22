@@ -1,0 +1,30 @@
+D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P08.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P08.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module NotGate
+-- Compiling module AndGate
+-- Compiling module OrGate
+-- Compiling module XorGate
+-- Compiling module XnorGate
+-- Compiling module FullAdder
+-- Compiling module Add16Bit
+-- Compiling module Neg16
+-- Compiling module Mux2x1
+-- Compiling module Mux16b2x1
+-- Compiling module AndGate16w1
+-- Compiling module XorGate16w1
+-- Compiling module AndGate16
+-- Compiling module Nor16In
+-- Compiling module ALU
+
+Top level modules:
+	Neg16
+	ALU
+
+} {} {}} D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P08_TB.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P08_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module StimALU
+
+Top level modules:
+	StimALU
+
+} {} {}}

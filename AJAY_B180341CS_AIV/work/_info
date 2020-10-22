@@ -1,0 +1,758 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Files/ModelSim/AJAY_B180341CS_AIV
+vAndGate
+Z0 !s110 1572614640
+!i10b 1
+!s100 ;VDDg[_G>bW9RX6lXiK[z2
+I28anFgOffc>MPNc^?Q@Hj1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV
+Z3 w1572614577
+Z4 8D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_d.v
+Z5 FD:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_d.v
+L0 10
+Z6 OV;L;10.6d;65
+r1
+!s85 0
+31
+Z7 !s108 1572614640.000000
+Z8 !s107 D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_d.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_d.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@and@gate
+vBinaryCell
+R0
+!i10b 1
+!s100 SfL8Vj6H>=Yic];H;lIZn2
+IfST3Tfj7T:nIjL[KI7AcQ3
+R1
+R2
+R3
+R4
+R5
+L0 136
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@binary@cell
+vDeCoder2
+R0
+!i10b 1
+!s100 `:M8SgJB;?WN2PCBd=ooi1
+IP9fUQVJ2IN:<:mh<]hAn20
+R1
+R2
+R3
+R4
+R5
+L0 70
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@de@coder2
+vDeCoder4
+R0
+!i10b 1
+!s100 ?PV0X@8PHz^T_J4?zb8``1
+ICMa]oWB4cj[P39?2SZ@Mf2
+R1
+R2
+R3
+R4
+R5
+L0 82
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@de@coder4
+vDeCoder8
+R0
+!i10b 1
+!s100 E7meAlOJfO^NU;:9ldUj<1
+ILn2^lSZL1_ZJ0=aUhnHUk3
+R1
+R2
+R3
+R4
+R5
+L0 95
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@de@coder8
+vDFlipFlopRE
+R0
+!i10b 1
+!s100 gVNA_m=c]183@8<J`RgEA0
+IzlMdNI5_VCN1VOGLa9Tf63
+R1
+R2
+R3
+R4
+R5
+L0 123
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@d@flip@flop@r@e
+vDLatch
+R0
+!i10b 1
+!s100 TN^I<YO6LkEi7>0T<0dUV3
+I9k@ih6j8MnYC]DWf^=2ne3
+R1
+R2
+R3
+R4
+R5
+L0 108
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@d@latch
+vHalfAdder
+R0
+!i10b 1
+!s100 184WgEUT0GHDzE4<n@L7^0
+I`Xo4KEB;fALIm0ETk2=XZ1
+R1
+R2
+R3
+R4
+R5
+L0 252
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@half@adder
+vInc16Bit
+R0
+!i10b 1
+!s100 >b@jQn^1@V;Qj9]_`o2SS1
+ISAV[b[2[7bF6>^HfaMzLU1
+R1
+R2
+R3
+R4
+R5
+L0 262
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@inc16@bit
+vMod2a
+Z12 !s110 1572614217
+!i10b 1
+!s100 ;cc=VLPg985SLlTQ^jQ@h1
+I1o4Sn9GDS?W0_1]BQ1cjY3
+R1
+R2
+Z13 w1572614187
+Z14 8D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_a.v
+Z15 FD:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_a.v
+L0 351
+R6
+r1
+!s85 0
+31
+Z16 !s108 1572614217.000000
+Z17 !s107 D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_a.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_a.v|
+!i113 1
+R10
+R11
+n@mod2a
+vMod2b
+R0
+!i10b 1
+!s100 fMz=Tog96FRJ2f6FCB<D91
+ImdUhHVTWiSD[g5D84FaUT0
+R1
+R2
+R3
+R4
+R5
+Z19 L0 306
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@mod2b
+vMod2d
+R0
+!i10b 1
+!s100 YfdJ8WZ9iHckH11aNe5I^0
+I3H:BIcMhT81^e2OU]f8Lh1
+R1
+R2
+R3
+R4
+R5
+L0 362
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@mod2d
+vMultiplier
+R12
+!i10b 1
+!s100 OWV7j5K;z5dGiEWYN29^L1
+IWg35YlnfbLz?f^BC8Sh4I0
+R1
+R2
+R13
+R14
+R15
+R19
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+R11
+n@multiplier
+vMux2x1
+R0
+!i10b 1
+!s100 JR[eaFhfXcKIB;U3]F39`0
+IFQ_EBoE789FA;eMGN@[bl0
+R1
+R2
+R3
+R4
+R5
+L0 160
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@mux2x1
+vMux2x1_16
+R0
+!i10b 1
+!s100 [k6R_<Om>m5TO<I^hebQT0
+IZG_LFGED]6MJP?zT8f==Y1
+R1
+R2
+R3
+R4
+R5
+L0 173
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@mux2x1_16
+vMux4x1
+R0
+!i10b 1
+!s100 CQ9:>7c1UR;dj7X?Z@2e80
+IG9[R1OD48KTYkYnLm=hNZ0
+R1
+R2
+R3
+R4
+R5
+L0 183
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@mux4x1
+vMux4x1_16
+R0
+!i10b 1
+!s100 Gea_0WdShQ3>X:lgVjfDn3
+IR=@j?Na^2N3>g<L]`J=7I1
+R1
+R2
+R3
+R4
+R5
+L0 196
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@mux4x1_16
+vMux8x1
+R0
+!i10b 1
+!s100 _VB;6;K`7WN_`MAoU3b3c1
+I?2LhTWn`olA91_P2OS1LR3
+R1
+R2
+R3
+R4
+R5
+L0 206
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@mux8x1
+vMux8x1_16
+R0
+!i10b 1
+!s100 R]z>iTXQKK97O<eT>>T@[3
+I=F@SR[5RPBJz4okD:AFSS3
+R1
+R2
+R3
+R4
+R5
+L0 219
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@mux8x1_16
+vNand3
+R0
+!i10b 1
+!s100 9`6QM8JRiQgV31?j`3gM52
+Id`2Bdh4i=m3Sf<n>aYn0S3
+R1
+R2
+R3
+R4
+R5
+L0 58
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@nand3
+vNotGate
+R0
+!i10b 1
+!s100 X]5^9NfGV>[SNz2AEnD`l2
+I_596YRCKiYfCLI0]P^[dc2
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@not@gate
+vOrGate
+R0
+!i10b 1
+!s100 ZU_KHjOc^YT_Y0njaj]1^0
+I7P2e@o?k<J=e5Gg<jQA0a0
+R1
+R2
+R3
+R4
+R5
+L0 21
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@or@gate
+vPC
+R0
+!i10b 1
+!s100 UN]TVFCOC547aQ]<U?QL42
+I5n6[gXfVXjgEk[9D<]BX00
+R1
+R2
+R3
+R4
+R5
+L0 287
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@p@c
+vRAM
+Z20 !s110 1572626408
+!i10b 1
+!s100 9eTLZ:ohf6i;Pz4Z_P6nd3
+IlGF:UCdn;z:;GF[;Nb[:n0
+R1
+R2
+w1572624719
+8D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P01.v
+FD:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P01.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z21 !s108 1572626408.000000
+!s107 D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P01.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P01.v|
+!i113 1
+R10
+R11
+n@r@a@m
+vRAM8
+R0
+!i10b 1
+!s100 <2nnZgVbX5?<fc1lP<9TH3
+I[ac_:GS5oX:jFdAUeDjTP0
+R1
+R2
+R3
+R4
+R5
+L0 229
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@r@a@m8
+vRAM_ALU
+R20
+!i10b 1
+!s100 =H@8noK3zW6G6U=^U]9f53
+IN@S^mh@NW<^dbZ_G^;[kL0
+R1
+R2
+w1572626404
+8D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02.v
+FD:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02.v
+L0 1
+R6
+r1
+!s85 0
+31
+R21
+!s107 D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02.v|
+!i113 1
+R10
+R11
+n@r@a@m_@a@l@u
+vReg16Bit
+R0
+!i10b 1
+!s100 MQH]5M_l_db?2B;`zG=T@2
+I?2;UaL>G6J4LL8V<?fBmf3
+R1
+R2
+R3
+R4
+R5
+L0 150
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@reg16@bit
+vStimModule2a
+!s110 1572622627
+!i10b 1
+!s100 GzQhD]E<KYBE8DEJB6bYn3
+IiIAL]7C8QE;>HV61:g;_f1
+R1
+R2
+w1572614210
+8D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_a_TB.v
+FD:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_a_TB.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1572622627.000000
+!s107 D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_a_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_a_TB.v|
+!i113 1
+R10
+R11
+n@stim@module2a
+vStimModule2b
+!s110 1572614405
+!i10b 1
+!s100 gg3Ra1<:;ROn=FB3i3;OQ2
+IfgH<BXde0z:4354n06Of=0
+R1
+R2
+w1572614358
+8D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_b_TB.v
+FD:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_b_TB.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1572614405.000000
+!s107 D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_b_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_b_TB.v|
+!i113 1
+R10
+R11
+n@stim@module2b
+vStimModule2d
+!s110 1572614641
+!i10b 1
+!s100 @DUSVaob4cFSjYXAPZ;K20
+I<PX6_LULI_eWLT4I3o1UZ2
+R1
+R2
+w1572614609
+8D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_d_TB.v
+FD:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_d_TB.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1572614641.000000
+!s107 D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_d_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_d_TB.v|
+!i113 1
+R10
+R11
+n@stim@module2d
+vStimMultiplier
+R20
+!i10b 1
+!s100 kfkJX1958<7e4H:[mzOa_2
+IObm9SBmH_FC?D;eg7=[zL1
+R1
+R2
+w1572619465
+8D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P01_TB.v
+FD:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P01_TB.v
+L0 1
+R6
+r1
+!s85 0
+31
+R21
+!s107 D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P01_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P01_TB.v|
+!i113 1
+R10
+R11
+n@stim@multiplier
+vStimSamabavam
+R20
+!i10b 1
+!s100 LWC2>>2LO4COm:X4HMZBi3
+I^nX[DFoF2eMI9klOe22LL1
+R1
+R2
+w1572625853
+8D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_TB.v
+FD:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_TB.v
+L0 1
+R6
+r1
+!s85 0
+31
+R21
+!s107 D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Files/ModelSim/AJAY_B180341CS_AIV/AJAY_B180341CS_AIV/AJAY_A4_P02_TB.v|
+!i113 1
+R10
+R11
+n@stim@samabavam
+vXnorGate
+R0
+!i10b 1
+!s100 7UElN[mcGbBYA3KcljP560
+IQkKjIZ7gPR_1hL[hoz`1=2
+R1
+R2
+R3
+R4
+R5
+L0 47
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@xnor@gate
+vXorGate
+R0
+!i10b 1
+!s100 iYRLzF4z5Q]OX05YI1lAm2
+IzWfFWe6k419e8FZkRiagT2
+R1
+R2
+R3
+R4
+R5
+L0 33
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@xor@gate

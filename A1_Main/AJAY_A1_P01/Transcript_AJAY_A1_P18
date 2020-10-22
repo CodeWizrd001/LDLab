@@ -1,0 +1,20 @@
+# Reading D:/intelFPGA_pro/19.2/modelsim_ase/tcl/vsim/pref.tcl
+# Loading project AJAY_A1_P18
+# Compile of AJAY_A1_P18.v was successful.
+# Compile of AJAY_A1_P18_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SimDMux1x8
+# vsim -gui work.SimDMux1x8 
+# Start time: 02:15:29 on Aug 23,2019
+# Loading work.SimDMux1x8
+# Loading work.DMux1x8
+# Loading work.DMux1x2
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.OrGate
+# Loading work.DMux1x4
+add wave -position insertpoint sim:/SimDMux1x8/*
+run -all
+quit -sim
+# End time: 02:15:51 on Aug 23,2019, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 0

@@ -1,0 +1,27 @@
+# Compile of AJAY_A3_P03_TB.v was successful.
+# Compile of AJAY_A3_P03.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimReg
+# End time: 01:01:14 on Oct 11,2019, Elapsed time: 0:01:51
+# Errors: 0, Warnings: 2
+# vsim -gui work.StimReg 
+# Start time: 01:01:15 on Oct 11,2019
+# Loading work.StimReg
+# Loading work.Reg16Bit
+# Loading work.BinaryCell
+# Loading work.AndGate
+# Loading work.Mux2x1
+# Loading work.NotGate
+# Loading work.OrGate
+# Loading work.DFlipFlopRE
+# Loading work.DLatch
+add wave -position insertpoint sim:/StimReg/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ajay  Hostname: MSI  ProcessID: 13212
+#           Attempting to use alternate WLF file "./wlfthwa6df".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfthwa6df
+run
+quit -sim
+# End time: 01:01:33 on Oct 11,2019, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 2

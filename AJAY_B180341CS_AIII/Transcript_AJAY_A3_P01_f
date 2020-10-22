@@ -1,0 +1,37 @@
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A3_P01_f
+# Compile of AJAY_A3_P01_f.v was successful.
+# Compile of AJAY_A3_P01_f_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of AJAY_A3_P01_f.v was successful.
+# Compile of AJAY_A3_P01_f_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of AJAY_A3_P01_f.v was successful.
+# Compile of AJAY_A3_P01_f_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of AJAY_A3_P01_f.v was successful.
+# Compile of AJAY_A3_P01_f_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimDFlipFlopFESReset
+# vsim -gui work.StimDFlipFlopFESReset 
+# Start time: 02:06:45 on Oct 11,2019
+# Loading work.StimDFlipFlopFESReset
+# Loading work.DFlipFlopFESReset
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.DFlipFlopFE
+# Loading work.DLatch
+add wave -position insertpoint sim:/StimDFlipFlopFESReset/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ajay  Hostname: MSI  ProcessID: 13212
+#           Attempting to use alternate WLF file "./wlftjfgxxr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjfgxxr
+run
+run
+quit -sim
+# End time: 02:07:07 on Oct 11,2019, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 2

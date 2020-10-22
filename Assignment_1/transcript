@@ -1,0 +1,85 @@
+# Compile of Modules.v was successful.
+# Compile of Sim.v was successful.
+# Compile of UtilSim.v was successful.
+# Compile of Util.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.SimMux16x1by4
+# vsim -gui work.SimMux16x1by4 
+# Start time: 01:24:28 on Aug 23,2019
+# Loading work.SimMux16x1by4
+# Loading work.Mux16x1by4
+# Loading work.Mux4x1
+# Loading work.Mux2x1
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.OrGate
+add wave -position insertpoint sim:/SimMux16x1by4/*
+run -all
+# Break key hit
+# Break in Module SimMux16x1by4 at D:/Files/ModelSim/Assignment_1/UtilSim.v line 119
+# Compile of Modules.v was successful.
+# Compile of Sim.v was successful.
+# Compile of UtilSim.v was successful.
+# Compile of Util.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.Sim16Mux4x1
+# End time: 01:25:39 on Aug 23,2019, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 0
+# vsim -gui work.Sim16Mux4x1 
+# Start time: 01:25:39 on Aug 23,2019
+# Loading work.Sim16Mux4x1
+# Loading work.Mux4x1_16
+# Loading work.Mux4x1
+# Loading work.Mux2x1
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.OrGate
+add wave -position insertpoint sim:/Sim16Mux4x1/*
+run -all
+# Break key hit
+# Break at an unknown location
+vsim -gui work.Sim16Mux8x1
+# End time: 01:26:33 on Aug 23,2019, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 0
+# vsim -gui work.Sim16Mux8x1 
+# Start time: 01:26:33 on Aug 23,2019
+# Loading work.Sim16Mux8x1
+# Loading work.Mux8x1_16
+# Loading work.Mux8x1
+# Loading work.Mux4x1
+# Loading work.Mux2x1
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.OrGate
+add wave -position insertpoint sim:/Sim16Mux8x1/*
+run -all
+# Break key hit
+# Break at an unknown location
+# Compile of Modules.v was successful.
+# Compile of Sim.v was successful.
+# Compile of UtilSim.v was successful.
+# Compile of Util.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.Sim16Mux8x1
+# End time: 01:28:02 on Aug 23,2019, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0
+# vsim -gui work.Sim16Mux8x1 
+# Start time: 01:28:02 on Aug 23,2019
+# Loading work.Sim16Mux8x1
+# Loading work.Mux8x1_16
+# Loading work.Mux8x1
+# Loading work.Mux4x1
+# Loading work.Mux2x1
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.OrGate
+run -all
+# Break key hit
+# Break in Module Sim16Mux8x1 at D:/Files/ModelSim/Assignment_1/Sim.v line 299
+restart -f
+add wave -position insertpoint sim:/Sim16Mux8x1/*
+run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 01:28:53 on Aug 23,2019, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 0

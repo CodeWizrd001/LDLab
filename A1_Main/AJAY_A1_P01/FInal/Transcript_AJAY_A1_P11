@@ -1,0 +1,15 @@
+# End time: 00:29:58 on Aug 23,2019, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 0
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A1_P11
+# Compile of AJAY_A1_P11.v was successful.
+# Compile of AJAY_A1_P11_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.Sim8Or
+# vsim -gui work.Sim8Or 
+# Start time: 00:37:01 on Aug 23,2019
+# Loading work.Sim8Or
+# Loading work.OrGate8In
+# Loading work.OrGate
+add wave -position insertpoint sim:/Sim8Or/*
+run -all

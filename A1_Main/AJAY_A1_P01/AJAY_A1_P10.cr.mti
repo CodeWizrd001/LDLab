@@ -1,0 +1,19 @@
+D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P10.v {1 {vlog -work work -stats=none D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P10.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module NotGate
+-- Compiling module AndGate
+-- Compiling module OrGate
+-- Compiling module XorGate
+-- Compiling module XorGate16
+
+Top level modules:
+	XorGate16
+
+} {} {}} D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P10_TB.v {1 {vlog -work work -stats=none D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P10_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module SimXor16
+
+Top level modules:
+	SimXor16
+
+} {} {}}

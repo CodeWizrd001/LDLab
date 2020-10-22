@@ -1,0 +1,15 @@
+D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P01.v {1 {vlog -work work -stats=none D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P01.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module NotGate
+
+Top level modules:
+	NotGate
+
+} {} {}} D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P01_TB.v {1 {vlog -work work -stats=none D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P01_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module SimNot
+
+Top level modules:
+	SimNot
+
+} {} {}}

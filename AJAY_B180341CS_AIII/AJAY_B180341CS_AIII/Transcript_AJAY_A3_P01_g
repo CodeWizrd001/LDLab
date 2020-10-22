@@ -1,0 +1,30 @@
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A3_P01_g
+# Compile of AJAY_A3_P01_g.v was successful.
+# Compile of AJAY_A3_P01_g_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimDFlipFlopFEAResetHigh
+# vsim -gui work.StimDFlipFlopFEAResetHigh 
+# Start time: 15:50:08 on Oct 11,2019
+# Loading work.StimDFlipFlopFEAResetHigh
+# Loading work.DFlipFlopFEAResetHigh
+# Loading work.NotGate
+# Loading work.DLatchWR
+# Loading work.AndGate
+# Loading work.Nand3
+add wave -position insertpoint sim:/StimDFlipFlopFEAResetHigh/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ajay  Hostname: MSI  ProcessID: 7556
+#           Attempting to use alternate WLF file "./wlftgejfgi".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftgejfgi
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 15:50:36 on Oct 11,2019, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 2

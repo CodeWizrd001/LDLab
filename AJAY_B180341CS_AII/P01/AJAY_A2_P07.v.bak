@@ -1,0 +1,9 @@
+module NotGate(a,b) ;
+
+output b ;
+input a ;
+
+nand(b,a,a) ;
+
+endmodule 
+

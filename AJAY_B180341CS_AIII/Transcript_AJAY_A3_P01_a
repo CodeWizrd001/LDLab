@@ -1,0 +1,21 @@
+# Compile of AJAY_A3_P01_a.v was successful.
+# Compile of AJAY_A3_P01_a_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimDFlipFlopRE
+# vsim -gui work.StimDFlipFlopRE 
+# Start time: 01:55:33 on Oct 11,2019
+# Loading work.StimDFlipFlopRE
+# Loading work.DFlipFlopRE
+# Loading work.NotGate
+# Loading work.DLatch
+# Loading work.AndGate
+add wave -position insertpoint sim:/StimDFlipFlopRE/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ajay  Hostname: MSI  ProcessID: 13212
+#           Attempting to use alternate WLF file "./wlftdehkef".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdehkef
+run
+quit -sim
+# End time: 01:55:58 on Oct 11,2019, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 2

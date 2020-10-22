@@ -1,0 +1,98 @@
+D:/Files/ModelSim/Assignment_1/Modules.v {1 {vlog -work Work_Assignment_1 -stats=none D:/Files/ModelSim/Assignment_1/Modules.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module NotGate
+-- Compiling module AndGate
+-- Compiling module OrGate
+-- Compiling module NorGate
+-- Compiling module XorGate
+-- Compiling module XnorGate
+-- Compiling module NotGate16
+-- Compiling module AndGate16
+-- Compiling module OrGate16
+-- Compiling module XorGate16
+-- Compiling module OrGate8In
+-- Compiling module Mux2x1
+-- Compiling module DMux1x2
+-- Compiling module Mux2x1_16
+-- Compiling module Mux4x1
+-- Compiling module Mux4x1_16
+-- Compiling module Mux8x1
+-- Compiling module Mux8x1_16
+-- Compiling module DMux1x4
+-- Compiling module DMux1x8
+
+Top level modules:
+	NorGate
+	XnorGate
+	NotGate16
+	AndGate16
+	OrGate16
+	XorGate16
+	OrGate8In
+	Mux2x1_16
+	Mux4x1_16
+	Mux8x1_16
+	DMux1x8
+
+} {} {}} D:/Files/ModelSim/Assignment_1/Sim.v {1 {vlog -work work -stats=none D:/Files/ModelSim/Assignment_1/Sim.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module SimNot
+-- Compiling module SimAnd
+-- Compiling module SimOr
+-- Compiling module SimNor
+-- Compiling module SimXor
+-- Compiling module SimXnor
+-- Compiling module SimNot16
+-- Compiling module SimAnd16
+-- Compiling module SimOr16
+-- Compiling module SimXor16
+-- Compiling module Sim8Or
+-- Compiling module SimMux
+-- Compiling module SimDMux
+-- Compiling module Sim16Mux2x1
+-- Compiling module Sim16Mux4x1
+-- Compiling module Sim16Mux8x1
+-- Compiling module SimDMux1x4
+-- Compiling module SimDMux1x8
+
+Top level modules:
+	SimNot
+	SimAnd
+	SimOr
+	SimNor
+	SimXor
+	SimXnor
+	SimNot16
+	SimAnd16
+	SimOr16
+	SimXor16
+	Sim8Or
+	SimMux
+	SimDMux
+	Sim16Mux2x1
+	Sim16Mux4x1
+	Sim16Mux8x1
+	SimDMux1x4
+	SimDMux1x8
+
+} {} {}} D:/Files/ModelSim/Assignment_1/Util.v {1 {vlog -work work -stats=none D:/Files/ModelSim/Assignment_1/Util.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module AndGate3In
+-- Compiling module AndGate4In
+
+Top level modules:
+	AndGate3In
+	AndGate4In
+
+} {} {}} D:/Files/ModelSim/Assignment_1/UtilSim.v {1 {vlog -work work -stats=none D:/Files/ModelSim/Assignment_1/UtilSim.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module SimMux8x1
+-- Compiling module SimMux4x1
+-- Compiling module Diff
+
+Top level modules:
+	SimMux8x1
+	SimMux4x1
+	Diff
+
+} {} {}}

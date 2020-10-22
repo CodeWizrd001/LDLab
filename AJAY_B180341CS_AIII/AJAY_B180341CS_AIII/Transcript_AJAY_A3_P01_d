@@ -1,0 +1,22 @@
+# Compile of AJAY_A3_P01_d.v was successful.
+# Compile of AJAY_A3_P01_d_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimDFlipFlopAResetLow
+# vsim -gui work.StimDFlipFlopAResetLow 
+# Start time: 15:46:00 on Oct 11,2019
+# Loading work.StimDFlipFlopAResetLow
+# Loading work.DFlipFlopAResetLow
+# Loading work.DLatchWR
+# Loading work.AndGate
+# Loading work.NotGate
+# Loading work.Nand3
+add wave -position insertpoint sim:/StimDFlipFlopAResetLow/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ajay  Hostname: MSI  ProcessID: 7556
+#           Attempting to use alternate WLF file "./wlftt46d8y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftt46d8y
+run
+quit -sim
+# End time: 15:46:18 on Oct 11,2019, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 2

@@ -1,0 +1,34 @@
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A3_P04
+# Compile of AJAY_A3_P04.v was successful.
+# Compile of AJAY_A3_P04_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimRAM8
+# vsim -gui work.StimRAM8 
+# Start time: 01:09:22 on Oct 11,2019
+# Loading work.StimRAM8
+# Loading work.RAM8
+# Loading work.DeCoder8
+# Loading work.DeCoder2
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.DeCoder4
+# Loading work.Reg16Bit
+# Loading work.Mux8x1_16
+# Loading work.BinaryCell
+# Loading work.Mux2x1
+# Loading work.OrGate
+# Loading work.DFlipFlopRE
+# Loading work.DLatch
+# Loading work.Mux8x1
+# Loading work.Mux4x1
+add wave -position insertpoint sim:/StimRAM8/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ajay  Hostname: MSI  ProcessID: 13212
+#           Attempting to use alternate WLF file "./wlft3gndva".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3gndva
+run
+quit -sim
+# End time: 01:10:19 on Oct 11,2019, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 2

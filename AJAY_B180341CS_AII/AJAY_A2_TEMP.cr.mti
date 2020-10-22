@@ -1,0 +1,53 @@
+D:/Files/ModelSim/AJAY_B180341CS_AII/Stimulus.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AII/Stimulus.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module StimHalfAdder
+-- Compiling module StimFullAdder
+-- Compiling module StimInc4Bit
+-- Compiling module StimAdd4Bit
+-- Compiling module StimInc16Bit
+-- Compiling module StimAdd16Bit
+-- Compiling module StimNeg16
+-- Compiling module StimALU
+
+Top level modules:
+	StimHalfAdder
+	StimFullAdder
+	StimInc4Bit
+	StimAdd4Bit
+	StimInc16Bit
+	StimAdd16Bit
+	StimNeg16
+	StimALU
+
+} {} {}} D:/Files/ModelSim/AJAY_B180341CS_AII/Modules.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AII/Modules.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module NotGate
+-- Compiling module AndGate
+-- Compiling module OrGate
+-- Compiling module XorGate
+-- Compiling module XnorGate
+-- Compiling module HalfAdder
+-- Compiling module FullAdder
+-- Compiling module Inc4Bit
+-- Compiling module Add4Bit
+-- Compiling module Add16Bit
+-- Compiling module Inc16Bit
+-- Compiling module Neg16
+-- Compiling module Mux2x1
+-- Compiling module Mux16b2x1
+-- Compiling module AndGate16
+-- Compiling module AndGate16w1
+-- Compiling module XorGate16w1
+-- Compiling module XorGate16
+-- Compiling module Nor16In
+-- Compiling module ALU
+
+Top level modules:
+	Inc4Bit
+	Add4Bit
+	Inc16Bit
+	Neg16
+	XorGate16
+	ALU
+
+} {} {}}

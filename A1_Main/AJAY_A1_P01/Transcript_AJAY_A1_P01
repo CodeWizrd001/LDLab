@@ -1,0 +1,11 @@
+# Transcript_AJAY_A1_P01
+# Compile of AJAY_A1_P01.v was successful.
+# Compile of AJAY_A1_P01_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SimNot
+# vsim -gui work.SimNot 
+# Start time: 23:44:16 on Aug 21,2019
+# Loading work.SimNot
+# Loading work.NotGate
+add wave -position insertpoint sim:/SimNot/*
+run -all

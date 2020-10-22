@@ -1,0 +1,74 @@
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A3_P06
+# Compile of AJAY_A3_P06.v was successful.
+# Compile of AJAY_A3_P06_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimRAM512
+# vsim -gui work.StimRAM512 
+# Start time: 01:17:33 on Oct 11,2019
+# Loading work.StimRAM512
+# Loading work.RAM512
+# Loading work.DeCoder8
+# Loading work.DeCoder2
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.DeCoder4
+# Loading work.RAM64
+# Loading work.RAM8
+# Loading work.Reg16Bit
+# Loading work.Mux8x1_16
+# Loading work.BinaryCell
+# Loading work.Mux2x1
+# Loading work.OrGate
+# Loading work.DFlipFlopRE
+# Loading work.DLatch
+# Loading work.Mux8x1
+# Loading work.Mux4x1
+# ** Warning: Design size of 219338 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+add wave -position insertpoint sim:/StimRAM512/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ajay  Hostname: MSI  ProcessID: 13212
+#           Attempting to use alternate WLF file "./wlft4gk7n4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4gk7n4
+# Compile of AJAY_A3_P06.v was successful.
+# Compile of AJAY_A3_P06_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimRAM512
+# End time: 01:19:09 on Oct 11,2019, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 3
+# vsim -gui work.StimRAM512 
+# Start time: 01:19:10 on Oct 11,2019
+# Loading work.StimRAM512
+# Loading work.RAM512
+# Loading work.DeCoder8
+# Loading work.DeCoder2
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.DeCoder4
+# Loading work.RAM64
+# Loading work.RAM8
+# Loading work.Reg16Bit
+# Loading work.Mux8x1_16
+# Loading work.BinaryCell
+# Loading work.Mux2x1
+# Loading work.OrGate
+# Loading work.DFlipFlopRE
+# Loading work.DLatch
+# Loading work.Mux8x1
+# Loading work.Mux4x1
+# ** Warning: Design size of 219338 instances exceeds ModelSim - Intel FPGA Starter Edition recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim - Intel FPGA Edition. Expect performance to be adversely affected.
+add wave -position insertpoint sim:/StimRAM512/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ajay  Hostname: MSI  ProcessID: 13212
+#           Attempting to use alternate WLF file "./wlftq4s4ai".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftq4s4ai
+run
+quit -sim
+# End time: 01:21:28 on Oct 11,2019, Elapsed time: 0:02:18
+# Errors: 0, Warnings: 3

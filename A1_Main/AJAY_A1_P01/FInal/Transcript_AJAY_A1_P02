@@ -1,0 +1,12 @@
+# Transcript_AJAY_A1_P02
+# Compile of AJAY_A1_P02.v was successful.
+# Compile of AJAY_A1_P02.v was successful.
+# Compile of AJAY_A1_P02_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SimAnd
+# vsim -gui work.SimAnd 
+# Start time: 23:38:51 on Aug 21,2019
+# Loading work.SimAnd
+# Loading work.AndGate
+add wave -position insertpoint sim:/SimAnd/*
+run -all

@@ -1,0 +1,21 @@
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A1_P17
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A1_P17
+# Compile of AJAY_A1_P17.v was successful.
+# Compile of AJAY_A1_P17_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SimDMux1x4
+# vsim -gui work.SimDMux1x4 
+# Start time: 02:03:30 on Aug 23,2019
+# Loading work.SimDMux1x4
+# Loading work.DMux1x4
+# Loading work.DMux1x2
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.OrGate
+add wave -position insertpoint sim:/SimDMux1x4/*
+run -all
+quit -sim
+# End time: 02:03:44 on Aug 23,2019, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 0

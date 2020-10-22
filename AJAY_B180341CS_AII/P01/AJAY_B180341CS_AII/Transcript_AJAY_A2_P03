@@ -1,0 +1,20 @@
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A2_P03
+# Compile of AJAY_A2_P03.v was successful.
+# Compile of AJAY_A2_P03_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimInc4Bit
+# vsim -gui work.StimInc4Bit 
+# Start time: 23:15:25 on Sep 08,2019
+# Loading work.StimInc4Bit
+# Loading work.Inc4Bit
+# Loading work.HalfAdder
+# Loading work.AndGate
+# Loading work.XorGate
+# Loading work.NotGate
+# Loading work.OrGate
+add wave -position insertpoint sim:/StimInc4Bit/*
+run -all
+quit -sim
+# End time: 23:15:46 on Sep 08,2019, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0
