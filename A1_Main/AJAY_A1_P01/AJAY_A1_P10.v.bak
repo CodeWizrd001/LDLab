@@ -1,0 +1,22 @@
+module XorGate(a,b,c) ;  // 5
+
+output c ;
+input a,b ;
+wire x,y,x1,y1;
+
+NotGate NG_1(a,x) ;
+NotGate NG_2(b,y) ;
+AndGate AG_1(a,y,x1) ;
+AndGate AG_2(b,x,y1) ;
+OrGate OG_1(x1,y1,c) ;
+
+endmodule
+
+module XorGate16(a,b,c) ;  // 10
+
+output [0:15] c ;
+input [0:15] a,b ;
+
+XorGate XG_1[0:15](a,b,c) ;
+
+endmodule 

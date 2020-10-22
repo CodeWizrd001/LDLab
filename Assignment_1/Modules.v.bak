@@ -1,0 +1,238 @@
+module NotGate(a,b) ;   // 1
+
+output b ;
+input a ;
+
+nand(b,a,a) ;
+
+endmodule 
+
+module AndGate(a,b,c) ;  // 2 
+
+output c ;
+input a,b ;
+wire x ;
+
+nand(x,a,b);
+nand(c,x,x) ;
+
+endmodule 
+
+module OrGate(a,b,c) ;  // 3 
+
+output c ;
+input a,b ;
+wire x,y ;
+
+nand(x,a,a) ;
+nand(y,b,b) ;
+nand(c,x,y) ;
+
+endmodule 
+
+module NorGate(a,b,c) ;  // 4
+
+output c ;
+input a,b ;
+wire x ;
+OrGate OG_1(a,b,x) ;
+NotGate NG_1(x,c) ;
+
+endmodule 
+
+module XorGate(a,b,c) ;  // 5
+
+output c ;
+input a,b ;
+wire x,y,x1,y1;
+
+NotGate NG_1(a,x) ;
+NotGate NG_2(b,y) ;
+AndGate AG_1(a,y,x1) ;
+AndGate AG_2(b,x,y1) ;
+OrGate OG_1(x1,y1,c) ;
+
+endmodule
+
+module XnorGate(a,b,c) ;  // 6 
+
+output c ;
+input a,b ;
+wire x ;
+
+XorGate XG_1(a,b,x) ;
+NotGate NG_1(x,c) ;
+
+endmodule 
+
+module NotGate16(a,b) ; // 7 
+
+output [0:15] b ;
+input [0:15] a ;
+
+NotGate N_1[0:15](a,b);
+
+endmodule 
+
+module AndGate16(a,b,c) ;  // 8
+
+output [0:15] c ;
+input [0:15] a,b ;
+
+AndGate AG_1[0:15](a,b,c) ;
+
+endmodule 
+
+module OrGate16(a,b,c) ;  // 9
+
+output [0:15] c ;
+input [0:15] a,b ;
+
+OrGate OG_1[0:15](a,b,c) ;
+
+endmodule 
+
+module XorGate16(a,b,c) ;  // 10
+
+output [0:15] c ;
+input [0:15] a,b ;
+
+XorGate XG_1[0:15](a,b,c) ;
+
+endmodule 
+
+module OrGate8In(i1,i2,i3,i4,i5,i6,i7,i8,o) ;  // 11
+
+output o ;
+input i1,i2,i3,i4,i5,i6,i7,i8;
+wire a,b,w,x,y,z ;
+
+OrGate O1(i2,i1,w) ;
+OrGate O2(i4,i3,x) ;
+OrGate O3(i5,i6,y) ;
+OrGate O4(i7,i8,z) ;
+OrGate O5(w,x,a) ;
+OrGate O6(y,z,b) ;
+OrGate O7(a,b,o) ;
+
+endmodule 
+
+module Mux2x1(a,b,s,c) ;  // 12
+
+output c ;
+input a,b,s ;
+wire x,y,z ;
+
+NotGate NG_1(s,z );
+AndGate AG_1(a,z,x) ;
+AndGate AG_2(b,s,y) ;
+OrGate OG_1(x,y,c) ;
+
+endmodule 
+
+module DMux1x2(c,s,a,b) ;  // 13
+
+output a,b ;
+input s,c ;
+wire s_,x1,y1,x2,y2,z ;
+
+NotGate NG_1(s,s_) ;
+
+AndGate AG_0(c,s_,x1) ;
+AndGate AG_0_0(z,s,y1) ;
+OrGate OG1(y1,x1,a) ;
+
+AndGate AG_1(c,s,x2) ;
+AndGate AG_1_0(z,s_,y2) ;
+OrGate OG2(y2,x2,b) ;
+
+endmodule 
+
+module Mux2x1_16(a,b,s,o) ;  // 14
+
+output [15:0] o ;
+input [15:0] a,b ;
+input s ;
+
+Mux2x1 M[15:0](a,b,s,o) ;
+
+endmodule
+
+module Mux4x1(i0,i1,i2,i3,s1,s0,o) ;// 15
+
+output o ;
+input i0,i1,i2,i3 ;
+input s1,s0;
+wire w,x,y,z,s1_,s0_,a,b ;
+
+NotGate N1(s1,s1_) ;
+NotGate N2(s0,s0_) ;
+
+AndGate3In A1(i0,s1_,s0_,x) ;
+AndGate3In A2(i1,s1,s0_,y) ;
+AndGate3In A3(i2,s1_,s0,w) ;
+AndGate3In A4(i3,s1,s0,z) ;
+
+OrGate O1(x,y,a) ;
+OrGate O2(w,z,b) ;
+OrGate O3(a,b,o) ;
+
+endmodule
+
+module Mux4x1_16(i0,i1,i2,i3,s,o) ;
+
+output [15:0] o ;
+input [15:0] i0,i1,i2,i3 ;
+input [1:0] s ;
+
+Mux4x1 M[15:0](i0,i1,i2,i3,s[0],s[1],o) ;
+
+endmodule
+
+module Mux8x1(i1,i2,i3,i4,i5,i6,i7,i8,s0,s1,s2,o) ;		// 16
+
+output o ;
+input i1,i2,i3,i4,i5,i6,i7,i8 ;
+input s2,s1,s0 ;
+wire x,y ;
+
+Mux4x1 M1(i1,i2,i3,i4,s0,s1,x) ;
+Mux4x1 M2(i5,i6,i7,i8,s0,s1,y) ;
+Mux2x1 M3(x,y,s2,o) ;
+
+endmodule 
+
+module Mux8x1_16(i1,i2,i3,i4,i5,i6,i7,i8,s,o) ;
+
+output [15:0] o ;
+input [15:0] i1,i2,i3,i4,i5,i6,i7,i8 ;
+input [2:0] s ;
+
+Mux8x1 M[15:0](i1,i2,i3,i4,i5,i6,i7,i8,s[0],s[1],s[2],o) ;
+
+endmodule
+
+module DMux1x4(o,s,i) ;			// 17
+
+output [3:0] i ;
+input o ;
+input [1:0] s ; 
+wire a,b ;
+
+DMux1x2 D_0(o,s[1],a,b) ;
+DMux1x2 D_1(a,s[0],i[0],i[1]) ;
+DMux1x2 D_2(b,s[0],i[2],i[3]) ;
+
+endmodule
+
+module DMux1x8(o,s,i) ;		// 18
+output [7:0] i;
+input o;
+input [2:0] s;
+wire a,b ;
+
+DMux1x2 D_0(o,s[2],a,b) ;
+DMux1x4 D_1(a,s[1:0],i[3:0]) ;
+DMux1x4 D_2(b,s[1:0],i[7:4]) ;
+
+endmodule 

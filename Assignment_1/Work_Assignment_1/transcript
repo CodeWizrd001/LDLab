@@ -1,0 +1,19 @@
+# Reading D:/intelFPGA_pro/19.2/modelsim_ase/tcl/vsim/pref.tcl
+# Loading project Assignment_1
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project Q1
+# Compile of AJAY_A1_P01.v was successful.
+# Compile of AJAY_A1_P01_TB.V failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project Q1
+# Compile of AJAY_A1_P01.v was successful.
+# Compile of AJAY_A1_P01_TB.V was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimNot
+# vsim -gui work.StimNot 
+# Start time: 22:42:08 on Aug 21,2019
+# Loading work.StimNot
+# Loading work.NotGate
+add wave -position insertpoint sim:/StimNot/*
+run -all

@@ -1,0 +1,16 @@
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A1_P10
+# Compile of AJAY_A1_P10.v was successful.
+# Compile of AJAY_A1_P10_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.SimXor16
+# vsim -gui work.SimXor16 
+# Start time: 00:28:10 on Aug 23,2019
+# Loading work.SimXor16
+# Loading work.XorGate16
+# Loading work.XorGate
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.OrGate
+add wave -position insertpoint sim:/SimXor16/*
+run -all

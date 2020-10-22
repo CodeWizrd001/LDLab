@@ -1,0 +1,29 @@
+# Compile of AJAY_A4_P01.v was successful.
+# Compile of AJAY_A4_P01_TB.v failed with 9 errors.
+# 2 compiles, 1 failed with 9 errors.
+# Compile of AJAY_A4_P01.v was successful.
+# Compile of AJAY_A4_P01_TB.v failed with 10 errors.
+# 2 compiles, 1 failed with 10 errors.
+# Compile of AJAY_A4_P01.v was successful.
+# Compile of AJAY_A4_P01_TB.v failed with 8 errors.
+# 2 compiles, 1 failed with 8 errors.
+# Compile of AJAY_A4_P01.v was successful.
+# Compile of AJAY_A4_P01_TB.v failed with 8 errors.
+# 2 compiles, 1 failed with 8 errors.
+# Compile of AJAY_A4_P01.v was successful.
+# Compile of AJAY_A4_P01_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimMultiplier
+# vsim -gui work.StimMultiplier 
+# Start time: 20:14:34 on Nov 01,2019
+# Loading work.StimMultiplier
+# Loading work.RAM
+add wave -position insertpoint sim:/StimMultiplier/*
+run
+run
+run
+# Compile of AJAY_A4_P01.v was successful.
+# Compile of AJAY_A4_P01_TB.v was successful.
+# Compile of AJAY_A4_P02_a.v failed with 3 errors.
+# Compile of AJAY_A4_P02_a_TB.v was successful.
+# 4 compiles, 1 failed with 3 errors.

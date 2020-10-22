@@ -1,0 +1,13 @@
+# Transcript_AJAY_A1_P03
+# Compile of AJAY_A1_P03.v was successful.
+# Compile of AJAY_A1_P03_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimOr
+# End time: 23:50:14 on Aug 21,2019, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 0
+# vsim -gui work.StimOr 
+# Start time: 23:50:14 on Aug 21,2019
+# Loading work.StimOr
+# Loading work.OrGate
+add wave -position insertpoint sim:/StimOr/*
+run -all

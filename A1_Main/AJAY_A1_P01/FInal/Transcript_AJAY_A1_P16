@@ -1,0 +1,23 @@
+# End time: 01:52:22 on Aug 23,2019, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 0
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A1_P16
+# Compile of AJAY_A1_P16.v was successful.
+# Compile of AJAY_A1_P16_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.Sim16Mux8x1
+# vsim -gui work.Sim16Mux8x1 
+# Start time: 01:52:40 on Aug 23,2019
+# Loading work.Sim16Mux8x1
+# Loading work.Mux8x1_16
+# Loading work.Mux8x1
+# Loading work.Mux4x1
+# Loading work.Mux2x1
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.OrGate
+add wave -position insertpoint sim:/Sim16Mux8x1/*
+run -all
+quit -sim
+# End time: 01:52:56 on Aug 23,2019, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0

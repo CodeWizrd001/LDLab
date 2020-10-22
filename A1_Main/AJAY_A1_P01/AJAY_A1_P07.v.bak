@@ -1,0 +1,8 @@
+module NotGate16(a,b) ; // 7 
+
+output [0:15] b ;
+input [0:15] a ;
+
+NotGate N_1[0:15](a,b);
+
+endmodule 

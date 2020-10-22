@@ -1,0 +1,16 @@
+D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P08_TB.v {1 {vlog -work work -stats=none D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P08_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module SimAnd16
+
+Top level modules:
+	SimAnd16
+
+} {} {}} D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P08.v {1 {vlog -work work -stats=none D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P08.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module AndGate
+-- Compiling module AndGate16
+
+Top level modules:
+	AndGate16
+
+} {} {}}

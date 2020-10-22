@@ -1,0 +1,19 @@
+D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P01.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P01.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module NotGate
+-- Compiling module AndGate
+-- Compiling module OrGate
+-- Compiling module XorGate
+-- Compiling module HalfAdder
+
+Top level modules:
+	HalfAdder
+
+} {} {}} D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P01_TB.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P01_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module StimHalfAdder
+
+Top level modules:
+	StimHalfAdder
+
+} {} {}}

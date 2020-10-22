@@ -1,0 +1,21 @@
+D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P04.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P04.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module NotGate
+-- Compiling module AndGate
+-- Compiling module OrGate
+-- Compiling module XorGate
+-- Compiling module XnorGate
+-- Compiling module Add4Bit
+
+Top level modules:
+	XnorGate
+	Add4Bit
+
+} {} {}} D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P04_TB.v {1 {vlog -work work -stats=none D:/Files/ModelSim/AJAY_B180341CS_AII/P01/AJAY_A2_P04_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module StimAdd4Bit
+
+Top level modules:
+	StimAdd4Bit
+
+} {} {}}

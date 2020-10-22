@@ -1,0 +1,16 @@
+D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P11.v {1 {vlog -work work -stats=none D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P11.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module OrGate
+-- Compiling module OrGate8In
+
+Top level modules:
+	OrGate8In
+
+} {} {}} D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P11_TB.v {1 {vlog -work work -stats=none D:/Files/ModelSim/A1_Main/AJAY_A1_P01/AJAY_A1_P11_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module Sim8Or
+
+Top level modules:
+	Sim8Or
+
+} {} {}}

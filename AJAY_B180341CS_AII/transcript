@@ -1,0 +1,17 @@
+# Compile of Modules.v was successful.
+vsim -gui work.StimInc4Bit
+# vsim -gui work.StimInc4Bit 
+# Start time: 18:21:45 on Sep 13,2019
+# Loading work.StimInc4Bit
+# Loading work.Inc4Bit
+# Loading work.HalfAdder
+# Loading work.AndGate
+# Loading work.XorGate
+# Loading work.NotGate
+# Loading work.OrGate
+# Compile of Stimulus.v was successful.
+# 2 compiles, 0 failed with no errors.
+add wave -position insertpoint sim:/StimInc4Bit/*
+run
+# End time: 18:25:33 on Sep 13,2019, Elapsed time: 0:03:48
+# Errors: 0, Warnings: 0

@@ -1,0 +1,28 @@
+# Reading D:/intelFPGA_pro/19.2/modelsim_ase/tcl/vsim/pref.tcl
+# Loading project AJAY_B180341CS_AIII
+# reading D:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project AJAY_A3_P02
+# Compile of AJAY_A3_P02.v was successful.
+# Compile of AJAY_A3_P02_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimBinaryCell
+# vsim -gui work.StimBinaryCell 
+# Start time: 00:50:16 on Oct 11,2019
+# Loading work.StimBinaryCell
+# Loading work.BinaryCell
+# Loading work.AndGate
+# Loading work.Mux2x1
+# Loading work.NotGate
+# Loading work.OrGate
+# Loading work.DFlipFlopRE
+# Loading work.DLatch
+add wave -position insertpoint sim:/StimBinaryCell/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ajay  Hostname: MSI  ProcessID: 13212
+#           Attempting to use alternate WLF file "./wlftqcbayn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqcbayn
+run
+quit -sim
+# End time: 00:53:36 on Oct 11,2019, Elapsed time: 0:03:20
+# Errors: 0, Warnings: 2

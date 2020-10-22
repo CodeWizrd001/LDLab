@@ -1,0 +1,72 @@
+D:/Files/ModelSim/AJAY_B180341CS_AIII/Modules.v {1 {vlog -work work_AIII -stats=none D:/Files/ModelSim/AJAY_B180341CS_AIII/Modules.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module NotGate
+-- Compiling module AndGate
+-- Compiling module OrGate
+-- Compiling module XorGate
+-- Compiling module XnorGate
+-- Compiling module Nand3
+-- Compiling module DeCoder2
+-- Compiling module DeCoder4
+-- Compiling module DeCoder8
+-- Compiling module DLatch
+-- Compiling module DLatchWR
+-- Compiling module DFlipFlopRE
+-- Compiling module DFlipFlopSReset
+-- Compiling module DFlipFlopAResetLow
+-- Compiling module DFlipFlopAResetHigh
+-- Compiling module BinaryCell
+-- Compiling module Reg16Bit
+-- Compiling module Mux2x1
+-- Compiling module Mux2x1_16
+-- Compiling module Mux4x1
+-- Compiling module Mux4x1_16
+-- Compiling module Mux8x1
+-- Compiling module Mux8x1_16
+-- Compiling module RAM8
+-- Compiling module RAM64
+-- Compiling module RAM512
+-- Compiling module RAM4K
+-- Compiling module RAM16K
+-- Compiling module HalfAdder
+-- Compiling module Inc16Bit
+-- Compiling module PC
+
+Top level modules:
+	XnorGate
+	DFlipFlopSReset
+	DFlipFlopAResetLow
+	DFlipFlopAResetHigh
+	RAM16K
+	PC
+
+} {} {}} D:/Files/ModelSim/AJAY_B180341CS_AIII/Stimulus.v {1 {vlog -work work_AIII -stats=none {D:\Files\ModelSim\AJAY_B180341CS_AIII\Stimulus.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module StimDFlipFlopRE
+-- Compiling module StimDFlipFlopSReset
+-- Compiling module StimDFlipFlopAResetLow
+-- Compiling module StimDFlipFlopAResetHigh
+-- Compiling module StimBinaryCell
+-- Compiling module StimReg
+-- Compiling module StimRAM8
+-- Compiling module StimRAM64
+-- Compiling module StimRAM512
+-- Compiling module StimRAM4K
+-- Compiling module StimRAM16K
+-- Compiling module StimPC
+
+Top level modules:
+	StimDFlipFlopRE
+	StimDFlipFlopSReset
+	StimDFlipFlopAResetLow
+	StimDFlipFlopAResetHigh
+	StimBinaryCell
+	StimReg
+	StimRAM8
+	StimRAM64
+	StimRAM512
+	StimRAM4K
+	StimRAM16K
+	StimPC
+
+} {} {}}

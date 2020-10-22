@@ -1,0 +1,33 @@
+# Compile of AJAY_A4_P02_a.v was successful.
+# Compile of AJAY_A4_P02_a_TB.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.StimModule2a
+# vsim -gui work.StimModule2a 
+# Start time: 18:47:03 on Nov 01,2019
+# Loading work.StimModule2a
+# Loading work.Mod2a
+# Loading work.Multiplier
+# Loading work.RAM8
+# Loading work.DeCoder8
+# Loading work.DeCoder2
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.DeCoder4
+# Loading work.Reg16Bit
+# Loading work.Mux8x1_16
+# Loading work.BinaryCell
+# Loading work.Mux2x1
+# Loading work.OrGate
+# Loading work.DFlipFlopRE
+# Loading work.DLatch
+# Loading work.Mux8x1
+# Loading work.Mux4x1
+add wave -position insertpoint sim:/StimModule2a/*
+run
+run
+run
+run
+run
+quit -sim
+# End time: 18:47:42 on Nov 01,2019, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 0
